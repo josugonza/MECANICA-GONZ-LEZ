@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Trabajos | Motorcycles González</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { orange: '#FF6B00', red: '#FF2E2E', neon: '#00F0FF', dark: '#0A0C10', card: '#121620', border: '#1F293D' } },
+                    fontFamily: { heading: ['Orbitron', 'sans-serif'], subheading: ['Rajdhani', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-orange selection:text-white">
+
+    <!-- Header Multi-Página con Logo Oficial Team González -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
+            <!-- Logo Oficial -->
+            <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+                <img src="images/logo_team_gonzalez.jpg" alt="Team González Logo Oficial" class="h-10 sm:h-11 w-auto rounded-lg object-contain shadow-md border border-brand-orange/40 group-hover:scale-105 transition duration-300">
+                <div>
+                    <span class="font-heading font-black text-lg sm:text-xl tracking-wider text-white block leading-none">MOTORCYCLES <span class="text-brand-orange">GONZÁLEZ</span></span>
+                    <span class="font-subheading text-[11px] text-slate-400 tracking-widest uppercase block mt-0.5">Mecánica General, Repuestos & Accesorios</span>
+                </div>
+            </a>
+
+            <!-- Menú Navegación -->
+            <nav class="hidden xl:flex items-center gap-6 font-subheading text-sm font-semibold tracking-wide">
+                <a href="index.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="nosotros.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="user-check" class="w-4 h-4"></i> Quiénes Somos & Ubicación</a>
+                <a href="servicios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="wrench" class="w-4 h-4"></i> Servicios</a>
+                <a href="repuestos.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="package" class="w-4 h-4"></i> Repuestos</a>
+                <a href="accesorios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="shield" class="w-4 h-4"></i> Accesorios</a>
+                <a href="galeria.html" class="text-brand-orange flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="image" class="w-4 h-4"></i> Galería</a>
+            </nav>
+
+            <!-- Botón CTA -->
+            <div class="flex items-center gap-2 shrink-0">
+                <a href="contacto.html" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red font-subheading font-bold text-xs sm:text-sm tracking-wider text-white shadow-lg shadow-brand-orange/20 hover:scale-105 transition flex items-center gap-1.5 whitespace-nowrap">
+                    <i data-lucide="calendar" class="w-4 h-4"></i> AGENDAR CITA EN TALLER
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BANNER GALERÍA -->
+    <section class="py-16 bg-slate-950 border-b border-brand-border">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <span class="px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-subheading tracking-widest uppercase">TRANSPARENCIA & RESULTADOS</span>
+            <h1 class="font-heading text-4xl sm:text-5xl font-black text-white mt-3">GALERÍA DE TRABAJOS</h1>
+            <p class="text-slate-300 text-lg mt-3 font-light">
+                Comprueba de manera visual el nivel de acabado, preparación y componentes instalados en Motorcycles González.
+            </p>
+        </div>
+    </section>
+
+    <!-- SLIDER INTERACTIVO ANTES Y DESPUÉS DE MOTO -->
+    <section class="py-16 bg-slate-900 border-b border-brand-border">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <span class="px-3 py-1 rounded-full bg-brand-neon/10 border border-brand-neon/30 text-brand-neon text-xs font-subheading tracking-widest uppercase">COMPARADOR INTERACTIVO</span>
+                <h2 class="font-heading text-3xl font-black text-white mt-2">RESTAURACIÓN "ANTES Y DESPUÉS"</h2>
+                <p class="text-slate-400 text-sm mt-1">Arrastra la barra central para observar el cambio tras la afinación y servicio técnico presencial.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div id="before-after-container" class="relative w-full h-[350px] sm:h-[450px] rounded-2xl overflow-hidden border border-brand-border select-none shadow-2xl">
+                    
+                    <!-- Imagen de DESPUÉS -->
+                    <div class="absolute inset-0 bg-gradient-to-r from-emerald-950 via-slate-900 to-slate-950 flex flex-col items-center justify-center text-center p-6">
+                        <div class="w-20 h-20 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mb-3 border border-emerald-500/40">
+                            <i data-lucide="sparkles" class="w-10 h-10"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded bg-emerald-500/20 text-emerald-400 font-subheading text-xs font-bold uppercase mb-2">RESULTADO FINAL (DESPUÉS)</span>
+                        <h3 class="font-heading text-2xl font-bold text-white">Carburación Ajustada, Kit de Arrastre Reforzado & Mantenimiento</h3>
+                        <p class="text-slate-300 text-xs max-w-md mt-1">Suspensión calibrada, pastillas cerámicas y afinación técnica de motor.</p>
+                    </div>
+
+                    <!-- Imagen de ANTES -->
+                    <div id="before-image-layer" class="absolute inset-y-0 left-0 bg-gradient-to-r from-red-950 via-amber-950 to-slate-950 border-r-2 border-brand-orange flex flex-col items-center justify-center text-center p-6 overflow-hidden" style="width: 50%;">
+                        <div class="w-20 h-20 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center mb-3 border border-red-500/40">
+                            <i data-lucide="alert-triangle" class="w-10 h-10"></i>
+                        </div>
+                        <span class="px-3 py-1 rounded bg-red-500/20 text-red-400 font-subheading text-xs font-bold uppercase mb-2">ESTADO INICIAL (ANTES)</span>
+                        <h3 class="font-heading text-2xl font-bold text-slate-200">Fuga en Barras, Cadena Destensada & Falta de Servicio</h3>
+                        <p class="text-slate-400 text-xs max-w-md mt-1">Falta de lubricación, empaques desgastados y desajuste de válvulas.</p>
+                    </div>
+
+                    <!-- Slider Handle -->
+                    <div id="slider-handle" class="absolute top-0 bottom-0 -ml-4 w-8 cursor-ew-resize flex items-center justify-center z-30" style="left: 50%;">
+                        <div class="w-8 h-8 rounded-full bg-brand-orange text-white flex items-center justify-center shadow-lg border-2 border-white">
+                            <i data-lucide="chevrons-left-right" class="w-4 h-4"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOTOGRAFÍAS REALES DEL CLIENTE Y TRABAJOS -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-10">
+                <h3 class="font-heading text-2xl font-bold text-white">MUESTRA VISUAL Y TRABAJOS DESTACADOS</h3>
+                <p class="text-slate-400 text-xs mt-1">Imágenes de preparación, pruebas de rodaje e inspección técnica de componentes.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                
+                <div class="rounded-2xl overflow-hidden border border-brand-border bg-brand-card">
+                    <img src="images/hero_cross.jpg" alt="Motorcycles González Rodaje" class="w-full h-52 object-cover">
+                    <div class="p-4 space-y-1">
+                        <h4 class="font-subheading font-bold text-white text-base">Prueba de Rendimiento & Rodaje</h4>
+                        <p class="text-slate-400 text-xs">Evaluación en terreno tras afinación de motor y suspensión.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden border border-brand-border bg-brand-card">
+                    <img src="images/cross_action.jpg" alt="Servicio Técnico Mecánico" class="w-full h-52 object-cover">
+                    <div class="p-4 space-y-1">
+                        <h4 class="font-subheading font-bold text-white text-base">Servicio Técnico Especializado</h4>
+                        <p class="text-slate-400 text-xs">Mantenimiento preventivo y correctivo para todo tipo de motocicletas.</p>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden border border-brand-border bg-brand-card">
+                    <img src="images/cross_parts.jpg" alt="Repuestos e Inspección de Componentes" class="w-full h-52 object-contain bg-white p-2">
+                    <div class="p-4 space-y-1">
+                        <h4 class="font-subheading font-bold text-white text-base">Inspección de Componentes & Repuestos</h4>
+                        <p class="text-slate-400 text-xs">Revisión de suspensión, frenos de disco, escapes y accesorios.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-brand-border py-12 text-slate-400 text-sm text-center">
+        <p>© 2026 Motorcycles González | Luis Fernando González. Contacto: 0980583424</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

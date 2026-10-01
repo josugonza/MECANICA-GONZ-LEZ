@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos & Ubicación | Motorcycles González</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { orange: '#FF6B00', red: '#FF2E2E', neon: '#00F0FF', dark: '#0A0C10', card: '#121620', border: '#1F293D' } },
+                    fontFamily: { heading: ['Orbitron', 'sans-serif'], subheading: ['Rajdhani', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-orange selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-slate-950 border-b border-slate-800/80 py-2 px-4 text-xs font-subheading tracking-wider">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="text-emerald-400 font-bold">Motorcycles González | Luis Fernando González</span>
+            <span class="hidden sm:inline text-slate-400">Lun-Vie: 7am-7pm | Sáb-Dom: 7am-1pm</span>
+            <a href="https://wa.me/593980583424" target="_blank" class="text-brand-orange font-bold hover:text-white transition">WhatsApp: 0980583424</a>
+        </div>
+    </div>
+
+    <!-- Header Multi-Página con Logo Oficial Team González -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+                <img src="images/logo_team_gonzalez.jpg" alt="Team González Logo Oficial" class="h-10 sm:h-11 w-auto rounded-lg object-contain shadow-md border border-brand-orange/40 group-hover:scale-105 transition duration-300">
+                <div>
+                    <span class="font-heading font-black text-lg sm:text-xl tracking-wider text-white block leading-none">MOTORCYCLES <span class="text-brand-orange">GONZÁLEZ</span></span>
+                    <span class="font-subheading text-[11px] text-slate-400 tracking-widest uppercase block mt-0.5">Mecánica General, Repuestos & Accesorios</span>
+                </div>
+            </a>
+
+            <nav class="hidden xl:flex items-center gap-6 font-subheading text-sm font-semibold tracking-wide">
+                <a href="index.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="nosotros.html" class="text-brand-orange flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="user-check" class="w-4 h-4"></i> Quiénes Somos & Ubicación</a>
+                <a href="servicios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="wrench" class="w-4 h-4"></i> Servicios</a>
+                <a href="repuestos.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="package" class="w-4 h-4"></i> Repuestos</a>
+                <a href="accesorios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="shield" class="w-4 h-4"></i> Accesorios</a>
+                <a href="galeria.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="image" class="w-4 h-4"></i> Galería</a>
+            </nav>
+
+            <a href="contacto.html" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red font-subheading font-bold text-xs sm:text-sm tracking-wider text-white shrink-0 whitespace-nowrap">AGENDAR CITA EN TALLER</a>
+        </div>
+    </header>
+
+    <!-- BANNER HERO QUIÉNES SOMOS & UBICACIÓN -->
+    <section class="py-16 bg-slate-950 border-b border-brand-border">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <span class="px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-subheading tracking-widest uppercase">NUESTRA HISTORIA & UBICACIÓN FÍSICA</span>
+            <h1 class="font-heading text-4xl sm:text-5xl font-black text-white mt-3">QUIÉNES SOMOS & UBICACIÓN</h1>
+            <p class="text-slate-300 text-lg mt-3 font-light">
+                Descubre cómo <strong>Motorcycles González (Team González)</strong> brinda soluciones integrales para motociclistas en Pimampiro, Imbabura.
+            </p>
+        </div>
+    </section>
+
+    <!-- DETALLE DEL PROYECTO Y VALORES -->
+    <section class="py-20">
+        <div class="container mx-auto px-4 space-y-20">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-6 space-y-4">
+                    <h2 class="font-heading text-2xl sm:text-3xl font-bold text-white">NUESTRA MISIÓN & PROPUESTA DE VALOR</h2>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        En <strong>Motorcycles González</strong>, liderado por <strong>Luis Fernando González</strong>, nos dedicamos a brindar atención personalizada, diagnóstico previo directo, explicación transparente del trabajo a realizar y soluciones mecánicas acordes con las características únicas de cada motocicleta.
+                    </p>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Buscamos ser el punto de atención integral para los motociclistas, evitando que tengan que acudir a diferentes establecimientos. Aquí encuentran servicio técnico especializado, repuestos de calidad e instalación de accesorios en un mismo lugar.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4">
+                    <div class="p-5 rounded-2xl bg-brand-card border border-brand-border">
+                        <i data-lucide="shield-check" class="w-8 h-8 text-brand-orange mb-3"></i>
+                        <h4 class="font-heading text-lg font-bold text-white">Confianza</h4>
+                        <p class="text-slate-400 text-xs mt-1">Transparencia en diagnósticos e inspección presencial.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-brand-card border border-brand-border">
+                        <i data-lucide="crosshair" class="w-8 h-8 text-brand-neon mb-3"></i>
+                        <h4 class="font-heading text-lg font-bold text-white">Precisión</h4>
+                        <p class="text-slate-400 text-xs mt-1">Ajustes mecánicos y eléctricos al detalle.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-brand-card border border-brand-border">
+                        <i data-lucide="award" class="w-8 h-8 text-emerald-400 mb-3"></i>
+                        <h4 class="font-heading text-lg font-bold text-white">Experiencia</h4>
+                        <p class="text-slate-400 text-xs mt-1">Soluciones efectivas para todo tipo de motocicletas.</p>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-brand-card border border-brand-border">
+                        <i data-lucide="zap" class="w-8 h-8 text-amber-400 mb-3"></i>
+                        <h4 class="font-heading text-lg font-bold text-white">Movimiento</h4>
+                        <p class="text-slate-400 text-xs mt-1">Mantenimiento enfocado en reducir el tiempo de inactividad.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- BLOQUE UNIFICADO DE UBICACIÓN Y HORARIOS -->
+            <div class="bg-brand-card rounded-2xl p-6 sm:p-10 border border-brand-border space-y-8">
+                <div class="text-center max-w-2xl mx-auto space-y-2">
+                    <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-subheading font-bold uppercase">UBICACIÓN EXACTA Y HORARIOS</span>
+                    <h3 class="font-heading text-2xl sm:text-3xl font-black text-white">ENCONTRARNOS EN PIMAMPIRO ES MUY FÁCIL</h3>
+                    <p class="text-slate-400 text-sm">Estamos ubicados frente al Cementerio de Pimampiro para brindarle atención presencial a tu moto.</p>
+                </div>
+
+                <div class="grid lg:grid-cols-12 gap-8 items-center">
+                    
+                    <div class="lg:col-span-5 space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+                            <div class="p-3 rounded-lg bg-brand-orange/10 text-brand-orange shrink-0">
+                                <i data-lucide="map-pin" class="w-6 h-6"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-subheading font-bold text-white text-base">Dirección del Taller</h4>
+                                <p class="text-slate-200 text-sm font-semibold">Pimampiro, Provincia de Imbabura</p>
+                                <p class="text-slate-300 text-xs mt-0.5">Calles Paquisha e Isidro de la Bastida (Frente al Cementerio)</p>
+                                <p class="text-slate-500 text-[11px] mt-1 font-mono">Coordenadas: 0°23'32.8"N 77°56'33.5"W</p>
+                            </div>
+                        </div>
+
+                        <!-- Horarios Confirmados -->
+                        <div class="p-4 rounded-xl bg-slate-900 border border-slate-800 flex items-start gap-4">
+                            <div class="p-3 rounded-lg bg-emerald-500/10 text-emerald-400 shrink-0">
+                                <i data-lucide="clock" class="w-6 h-6"></i>
+                            </div>
+                            <div class="space-y-1">
+                                <h4 class="font-subheading font-bold text-white text-base">Horario de Atención</h4>
+                                <div class="text-xs text-slate-200 font-semibold">🗓️ Lunes a Viernes: <span class="text-emerald-400">7:00 AM - 7:00 PM</span></div>
+                                <div class="text-xs text-slate-200 font-semibold">🗓️ Sábados y Domingos: <span class="text-emerald-400">7:00 AM - 1:00 PM</span></div>
+                            </div>
+                        </div>
+
+                        <a href="contacto.html" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red font-subheading font-bold text-sm tracking-wider text-white text-center flex items-center justify-center gap-2 shadow-lg shadow-brand-orange/30">
+                            <i data-lucide="calendar-check" class="w-4 h-4"></i> AGENDAR CITA PRESENCIAL EN TALLER
+                        </a>
+                    </div>
+
+                    <div class="lg:col-span-7 h-[360px] rounded-2xl overflow-hidden border border-brand-border relative bg-slate-950 shadow-2xl">
+                        <iframe title="Ubicación Motorcycles González Pimampiro" class="w-full h-full filter grayscale contrast-125 opacity-90 hover:opacity-100 transition duration-500" src="https://maps.google.com/maps?q=0.3924444,-77.9426388&z=19&output=embed" loading="lazy"></iframe>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- AUDIENCIA DEL BRIEF -->
+            <div>
+                <div class="text-center max-w-3xl mx-auto mb-12">
+                    <h3 class="font-heading text-2xl font-bold text-white">NUESTROS CLIENTES & SEGMENTOS ATENDIDOS</h3>
+                    <p class="text-slate-400 text-sm mt-1">Atención adaptada a las necesidades reales de cada conductor.</p>
+                </div>
+
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="p-6 rounded-2xl bg-brand-card border border-brand-border text-center space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-brand-orange/10 text-brand-orange flex items-center justify-center mx-auto">
+                            <i data-lucide="user" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-subheading font-bold text-lg text-white">Motociclistas Particulares</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Personas que utilizan su motocicleta como medio de transporte diario hacia su trabajo, universidad u hogar.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-card border border-brand-border text-center space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center mx-auto">
+                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-subheading font-bold text-lg text-white">Uso Continuo en Trabajo</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Personas que utilizan sus motocicletas diariamente para uso continuo en su trabajo. Para ellos es especialmente importante mantener la motocicleta en óptimas condiciones y reducir al mínimo el tiempo fuera de funcionamiento.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-card border border-brand-border text-center space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-brand-neon/10 text-brand-neon flex items-center justify-center mx-auto">
+                            <i data-lucide="sliders" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-subheading font-bold text-lg text-white">Personalización & Accesorios</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Propietarios interesados en componentes, accesorios y mejoras para aumentar la comodidad, protección o estética de la moto.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-brand-card border border-brand-border text-center space-y-3">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto">
+                            <i data-lucide="package" class="w-6 h-6"></i>
+                        </div>
+                        <h4 class="font-subheading font-bold text-lg text-white">Búsqueda de Repuestos</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed">Clientes que necesitan comprar una pieza específica o asesoría para identificar el repuesto adecuado para su modelo.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 border-t border-brand-border py-12 text-slate-400 text-sm text-center">
+        <p>© 2026 Motorcycles González | Luis Fernando González. Pimampiro, Imbabura - Calles Paquisha e Isidro de la Bastida. Contacto: 0980583424</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

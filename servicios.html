@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Mecánicos & Revisión Técnica | Motorcycles González</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { orange: '#FF6B00', red: '#FF2E2E', neon: '#00F0FF', dark: '#0A0C10', card: '#121620', border: '#1F293D' } },
+                    fontFamily: { heading: ['Orbitron', 'sans-serif'], subheading: ['Rajdhani', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-orange selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-slate-950 border-b border-slate-800/80 py-2 px-4 text-xs font-subheading tracking-wider">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="text-emerald-400 font-bold">Motorcycles González | Luis Fernando González</span>
+            <span class="hidden sm:inline text-slate-400">Lun-Vie: 7am-7pm | Sáb-Dom: 7am-1pm</span>
+            <a href="https://wa.me/593980583424" target="_blank" class="text-brand-orange font-bold hover:text-white transition">WhatsApp: 0980583424</a>
+        </div>
+    </div>
+
+    <!-- Header Multi-Página con Logo Oficial Team González -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+                <img src="images/logo_team_gonzalez.jpg" alt="Team González Logo Oficial" class="h-10 sm:h-11 w-auto rounded-lg object-contain shadow-md border border-brand-orange/40 group-hover:scale-105 transition duration-300">
+                <div>
+                    <span class="font-heading font-black text-lg sm:text-xl tracking-wider text-white block leading-none">MOTORCYCLES <span class="text-brand-orange">GONZÁLEZ</span></span>
+                    <span class="font-subheading text-[11px] text-slate-400 tracking-widest uppercase block mt-0.5">Mecánica General, Repuestos & Accesorios</span>
+                </div>
+            </a>
+
+            <nav class="hidden xl:flex items-center gap-6 font-subheading text-sm font-semibold tracking-wide">
+                <a href="index.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="nosotros.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="user-check" class="w-4 h-4"></i> Quiénes Somos & Ubicación</a>
+                <a href="servicios.html" class="text-brand-orange flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="wrench" class="w-4 h-4"></i> Servicios</a>
+                <a href="repuestos.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="package" class="w-4 h-4"></i> Repuestos</a>
+                <a href="accesorios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="shield" class="w-4 h-4"></i> Accesorios</a>
+                <a href="galeria.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="image" class="w-4 h-4"></i> Galería</a>
+            </nav>
+
+            <a href="contacto.html" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red font-subheading font-bold text-xs sm:text-sm tracking-wider text-white shrink-0 whitespace-nowrap">AGENDAR CITA EN TALLER</a>
+        </div>
+    </header>
+
+    <!-- BANNER SERVICIOS -->
+    <section class="py-16 bg-slate-950 border-b border-brand-border">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <span class="px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-subheading tracking-widest uppercase">MANTENIMIENTO INTEGRAL ESPECIALIZADO</span>
+            <h1 class="font-heading text-4xl sm:text-5xl font-black text-white mt-3">SERVICIOS MECÁNICOS</h1>
+            <p class="text-slate-300 text-lg mt-3 font-light">
+                Cada motocicleta es única. Debido a las variaciones entre marcas, cilindradas y disponibilidad de repuestos en el mercado, te ofrecemos un <strong>diagnóstico e inspección presencial directa</strong> en taller.
+            </p>
+        </div>
+    </section>
+
+    <!-- NOTA DE TRANSPARENCIA PRESENCIAL -->
+    <section class="py-12 bg-gradient-to-r from-slate-950 via-brand-card to-slate-950 border-b border-brand-border">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-brand-orange/40 flex flex-col md:flex-row items-center gap-6">
+                <div class="w-16 h-16 rounded-2xl bg-brand-orange/20 text-brand-orange flex items-center justify-center shrink-0 border border-brand-orange/40">
+                    <i data-lucide="shield-alert" class="w-8 h-8"></i>
+                </div>
+                <div class="space-y-2 text-center md:text-left">
+                    <h3 class="font-heading text-xl font-bold text-white">¿POR QUÉ RECOMENDAMOS UNA REVISIÓN TÉCNICA PRESENCIAL?</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Los costos de reparación y el alcance de los mantenimientos dependen directamente del <strong>modelo exacto de tu motocicleta, su año, estado técnico actual y la disponibilidad/escasez de repuestos</strong>. Para garantizarte un presupuesto 100% honesto y sin sorpresas, realizamos una evaluación presencial previa.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HERRAMIENTA INTERACTIVA: GENERADOR DE FICHA DE REVISIÓN PRESENCIAL -->
+    <section class="py-16 bg-slate-900 border-b border-brand-border">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="px-3 py-1 rounded-full bg-brand-neon/10 border border-brand-neon/30 text-brand-neon text-xs font-subheading tracking-widest uppercase">INTERACTIVO Y PERSONALIZADO</span>
+                <h2 class="font-heading text-3xl font-black text-white mt-2">PRE-DIAGNÓSTICO PARA AGENDAR CITA</h2>
+                <p class="text-slate-400 text-sm mt-1">Selecciona los síntomas o revisiones que necesita tu moto para generar tu Ficha de Atención e ingresar tu vehículo con prioridad.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-8 items-start max-w-5xl mx-auto">
+                <div class="lg:col-span-7 bg-brand-card p-6 sm:p-8 rounded-2xl border border-brand-border space-y-6">
+                    <div>
+                        <label class="block font-subheading text-sm font-bold text-slate-300 uppercase tracking-wider mb-2">
+                            1. Marca y Modelo de tu Motocicleta
+                        </label>
+                        <input type="text" id="prep-moto" placeholder="Ej. Yamaha FZ 2.0 / Suzuki AX100 / Bajaj Pulsar" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-brand-orange outline-none">
+                    </div>
+
+                    <div>
+                        <label class="block font-subheading text-sm font-bold text-slate-300 uppercase tracking-wider mb-3">
+                            2. Selecciona las Áreas a Inspeccionar en Taller
+                        </label>
+                        <div class="space-y-2.5" id="prep-checklist-container">
+                            <!-- JS poblado -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 bg-slate-950 p-6 sm:p-8 rounded-2xl border border-brand-orange/40 shadow-2xl space-y-5 sticky top-24">
+                    <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                        <span class="font-heading text-sm font-bold text-white uppercase">FICHA DE REVISIÓN PRESENCIAL</span>
+                        <span class="text-xs text-brand-neon font-subheading font-bold">TEAM GONZÁLEZ</span>
+                    </div>
+
+                    <div id="prep-summary-list" class="space-y-2 min-h-[160px] text-xs text-slate-300 border-b border-slate-800 pb-4">
+                        <p class="text-slate-500 italic">Completa los datos para armar la orden de revisión técnica...</p>
+                    </div>
+
+                    <div class="p-3 rounded-xl bg-brand-orange/10 border border-brand-orange/30 text-xs text-brand-orange">
+                        <i data-lucide="info" class="w-4 h-4 inline mr-1"></i>
+                        Recibirás atención directa por <strong>Luis Fernando González</strong> al presentar esta ficha en Pimampiro.
+                    </div>
+
+                    <button onclick="sendPrepAppointmentWhatsApp()" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red hover:from-brand-red hover:to-brand-orange font-subheading font-bold text-sm tracking-wider text-white transition flex items-center justify-center gap-2 shadow-lg shadow-brand-orange/30">
+                        <i data-lucide="calendar-check" class="w-5 h-5"></i>
+                        AGENDAR CITA PRESENCIAL VÍA WHATSAPP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GUÍA PREVENTIVA POR KILOMETRAJE -->
+    <section class="py-20 border-b border-brand-border">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-subheading tracking-widest uppercase">GUÍA PREVENTIVA</span>
+                <h2 class="font-heading text-3xl font-black text-white mt-2">¿CUÁNDO LE TOCA MANTENIMIENTO A TU MOTO?</h2>
+                <p class="text-slate-400 text-sm mt-1">Haz clic en el rango de kilometraje de tu motocicleta para conocer las revisiones recomendadas:</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8" id="km-tabs-container">
+                    <!-- JS poblado -->
+                </div>
+                <div class="bg-brand-card p-6 sm:p-8 rounded-2xl border border-brand-border" id="km-info-panel">
+                    <!-- JS populado -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-brand-border py-12 text-slate-400 text-sm text-center">
+        <p>© 2026 Motorcycles González | Team González. Pimampiro, Imbabura (Paquisha e Isidro de la Bastida). Horarios: Lun-Vie 7am-7pm | Sáb-Dom 7am-1pm. Contacto: 0980583424</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

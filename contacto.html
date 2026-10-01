@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Cita Presencial | Motorcycles González (Pimampiro)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: { brand: { orange: '#FF6B00', red: '#FF2E2E', neon: '#00F0FF', dark: '#0A0C10', card: '#121620', border: '#1F293D' } },
+                    fontFamily: { heading: ['Orbitron', 'sans-serif'], subheading: ['Rajdhani', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans selection:bg-brand-orange selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-slate-950 border-b border-slate-800/80 py-2 px-4 text-xs font-subheading tracking-wider">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="text-emerald-400 font-bold">Motorcycles González | Luis Fernando González</span>
+            <span class="hidden sm:inline text-slate-400">Lun-Vie: 7am-7pm | Sáb-Dom: 7am-1pm</span>
+            <a href="https://wa.me/593980583424" target="_blank" class="text-brand-orange font-bold hover:text-white transition">WhatsApp: 0980583424</a>
+        </div>
+    </div>
+
+    <!-- Header Multi-Página con Logo Oficial Team González -->
+    <header class="sticky top-0 z-50 bg-brand-dark/95 backdrop-blur-md border-b border-brand-border">
+        <div class="container mx-auto px-4 py-2 flex items-center justify-between gap-4">
+            <a href="index.html" class="flex items-center gap-3 shrink-0 group">
+                <img src="images/logo_team_gonzalez.jpg" alt="Team González Logo Oficial" class="h-10 sm:h-11 w-auto rounded-lg object-contain shadow-md border border-brand-orange/40 group-hover:scale-105 transition duration-300">
+                <div>
+                    <span class="font-heading font-black text-lg sm:text-xl tracking-wider text-white block leading-none">MOTORCYCLES <span class="text-brand-orange">GONZÁLEZ</span></span>
+                    <span class="font-subheading text-[11px] text-slate-400 tracking-widest uppercase block mt-0.5">Mecánica General, Repuestos & Accesorios</span>
+                </div>
+            </a>
+
+            <nav class="hidden xl:flex items-center gap-6 font-subheading text-sm font-semibold tracking-wide">
+                <a href="index.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="home" class="w-4 h-4"></i> Inicio</a>
+                <a href="nosotros.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="user-check" class="w-4 h-4"></i> Quiénes Somos & Ubicación</a>
+                <a href="servicios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="wrench" class="w-4 h-4"></i> Servicios</a>
+                <a href="repuestos.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="package" class="w-4 h-4"></i> Repuestos</a>
+                <a href="accesorios.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="shield" class="w-4 h-4"></i> Accesorios</a>
+                <a href="galeria.html" class="text-slate-300 hover:text-brand-orange transition flex items-center gap-1.5 whitespace-nowrap"><i data-lucide="image" class="w-4 h-4"></i> Galería</a>
+            </nav>
+
+            <a href="contacto.html" class="px-4 py-2 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red font-subheading font-bold text-xs sm:text-sm tracking-wider text-white shrink-0 whitespace-nowrap">AGENDAR CITA EN TALLER</a>
+        </div>
+    </header>
+
+    <!-- BANNER AGENDAR CITA -->
+    <section class="py-16 bg-slate-950 border-b border-brand-border">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <span class="px-3 py-1 rounded-full bg-brand-orange/10 border border-brand-orange/30 text-brand-orange text-xs font-subheading tracking-widest uppercase">ATENCIÓN PRESENCIAL DIRECTA</span>
+            <h1 class="font-heading text-4xl sm:text-5xl font-black text-white mt-3">AGENDAR CITA EN TALLER</h1>
+            <p class="text-slate-300 text-lg mt-3 font-light">
+                Reserva la revisión técnica de tu motocicleta directamente con <strong>Luis Fernando González</strong> en Pimampiro.
+            </p>
+        </div>
+    </section>
+
+    <!-- DETALLES DE ATENCIÓN Y FORMULARIO ÚNICO -->
+    <section class="py-16">
+        <div class="container mx-auto px-4 max-w-5xl">
+            <div class="grid lg:grid-cols-12 gap-8 items-start">
+                
+                <!-- Datos Directos y Horarios -->
+                <div class="lg:col-span-5 space-y-4">
+                    <div class="p-5 rounded-2xl bg-brand-card border border-brand-border space-y-4">
+                        <span class="text-xs font-subheading uppercase font-bold text-brand-orange">INFORMACIÓN DE ATENCIÓN</span>
+                        
+                        <div class="space-y-3 text-xs text-slate-300">
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="user" class="w-4 h-4 text-brand-orange shrink-0"></i>
+                                <span><strong>Mecánico:</strong> Luis Fernando González</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="map-pin" class="w-4 h-4 text-brand-orange shrink-0"></i>
+                                <span><strong>Ubicación:</strong> Pimampiro, Calles Paquisha e Isidro de la Bastida (Frente al Cementerio)</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="phone" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+                                <span><strong>WhatsApp / Tel:</strong> 0980583424</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <i data-lucide="mail" class="w-4 h-4 text-brand-neon shrink-0"></i>
+                                <span><strong>E-mail:</strong> motorcyclesgonzales@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <!-- Horarios Confirmados -->
+                        <div class="pt-3 border-t border-slate-800 space-y-1.5">
+                            <h4 class="font-subheading font-bold text-white text-xs uppercase flex items-center gap-1">
+                                <i data-lucide="clock" class="w-4 h-4 text-emerald-400"></i> Horarios Confirmados:
+                            </h4>
+                            <div class="text-xs text-slate-200">🗓️ <strong>Lunes a Viernes:</strong> <span class="text-emerald-400 font-bold">7:00 AM - 7:00 PM</span></div>
+                            <div class="text-xs text-slate-200">🗓️ <strong>Sábados y Domingos:</strong> <span class="text-emerald-400 font-bold">7:00 AM - 1:00 PM</span></div>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/?q=0.3924444,-77.9426388" target="_blank" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-subheading font-bold text-xs text-center flex items-center justify-center gap-2 transition">
+                        <i data-lucide="external-link" class="w-4 h-4 text-brand-orange"></i> ABRIR RUTA GPS EN GOOGLE MAPS
+                    </a>
+                </div>
+
+                <!-- Formulario de Agendamiento Directo -->
+                <div class="lg:col-span-7 bg-brand-card p-6 sm:p-8 rounded-2xl border border-brand-border space-y-6">
+                    <div>
+                        <h3 class="font-heading text-xl font-bold text-white mb-1">FORMULARIO DE RESERVA DE CITA</h3>
+                        <p class="text-slate-400 text-xs">Ingresa tus datos y selecciona tu horario preferido para confirmar por WhatsApp.</p>
+                    </div>
+
+                    <form onsubmit="sendContactForm(event)" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-subheading uppercase text-slate-300 mb-1">Tu Nombre</label>
+                                <input type="text" id="c-name" required placeholder="Ej. Carlos Mendoza" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-brand-orange outline-none">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-subheading uppercase text-slate-300 mb-1">Teléfono / WhatsApp</label>
+                                <input type="tel" id="c-phone" required placeholder="Ej. 0980583424" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-brand-orange outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-subheading uppercase text-slate-300 mb-1">Modelo de Motocicleta</label>
+                                <input type="text" id="c-moto" required placeholder="Ej. Pulsar NS200 / Suzuki AX100 / Honda Tornado" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-brand-orange outline-none">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-subheading uppercase text-slate-300 mb-1">Servicio Requerido</label>
+                                <select id="c-service" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-brand-orange outline-none">
+                                    <option value="Revisión Técnica Presencial General">Revisión Técnica Presencial General</option>
+                                    <option value="Mantenimiento Preventivo">Mantenimiento Preventivo</option>
+                                    <option value="Reparación Mecánica / Motor">Reparación Mecánica / Motor</option>
+                                    <option value="Servicio de Frenos / Transmisión">Servicio de Frenos / Transmisión</option>
+                                    <option value="Consulta por Repuesto Específico">Consulta por Repuesto Específico</option>
+                                    <option value="Instalación de Accesorios">Instalación de Accesorios</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-subheading uppercase text-slate-300 mb-1">Descripción del Servicio / Comentarios</label>
+                            <textarea id="c-notes" rows="3" placeholder="Indica el día y hora que prefieres asistir o cualquier falla que desees revisar..." class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-white focus:border-brand-orange outline-none"></textarea>
+                        </div>
+
+                        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-brand-orange to-brand-red hover:from-brand-red hover:to-brand-orange font-subheading font-bold text-white tracking-wider shadow-lg shadow-brand-orange/30">
+                            CONFIRMAR CITA EN TALLER VÍA WHATSAPP
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-950 border-t border-brand-border py-12 text-slate-400 text-sm text-center">
+        <p>© 2026 Motorcycles González | Luis Fernando González. Pimampiro, Imbabura - Calles Paquisha e Isidro de la Bastida. Horarios: Lun-Vie 7am-7pm | Sáb-Dom 7am-1pm. Contacto: 0980583424</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
